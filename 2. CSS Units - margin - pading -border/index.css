@@ -1,0 +1,44 @@
+html {
+    font-size: 100%;
+    
+}
+body{
+    background-image: linear-gradient(90deg,#e8edd0a4, rgba(98, 66, 6, 0.768)), url('https://mcdn.coolmate.me/image/October2021/global-brand-9_44.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.boxx {
+    float: left;
+}
+.box {
+    width: 50vw; /*bằng 1% kích thước chiều ngang của TRÌNH DUYỆT*/
+    height: 100px;
+    background-color: red;
+    border-top-width: 10px;
+    border-bottom-width: 0px;
+    border-color: #333;
+    border-style: solid; /*Mặc định border là 2px*/
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.box2 {
+    width: 25vw;
+    height: 100px;
+    background-color: orange;
+}
+ul .tama {
+    color: rgb(67, 67, 3);
+}
+#he{
+    color: red;;
+}
+
+h1 {
+    font-size: 1rem; /* 1rem tức l2 bằng một lần giá trị font-size của thẻ html, nói cách khác giá trị rem phụ thuộc vào thẻ html */
+}
+ul {
+    font-size: 2em; /*đơn vị em phụ thuộc vào thẻ ca gần nhất của nó mà đã có định nghãi font-size*/
+    /*ở đây ul đang dựa vào thẻ html*/
+}
+
+/* vw - width, vh - height*/
