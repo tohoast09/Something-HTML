@@ -4,7 +4,7 @@ html {
 }
 body{
     background-image: linear-gradient(90deg,#e8edd0a4, rgba(98, 66, 6, 0.768)), url('https://mcdn.coolmate.me/image/October2021/global-brand-9_44.jpg');
-    background-size: 100%;
+    background-size: content; /*có thê dùng thuộc tính cover*/
     background-repeat: no-repeat;
 }
 .boxx {
