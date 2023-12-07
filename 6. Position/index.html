@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        h1 {
+            position: relative; /*Lấy vị trí của nó đang dứng để tính toán*/
+            top: 100px; /*những thuộc tính này chỉ hoạt động khi position là relative*/
+            left: 300px;
+        }
+        .box {
+            position: relative;
+            width: 100%;
+            height: 120px;
+            background-color: #333;
+        }
+        .box-child {
+            position: absolute; /*TÌM THẺ CHA GẦN NHẤT CÓ THUỘC TÍNH POSITION, SAU ĐÓ VỊ TRÍ CỦA THẺ NÀY SẼ ĐƯỢC SO TƯƠNG ĐỐI VỚI THẺ CHA ĐÓ*/
+            top: 10px;
+            /*Nếu muốn phủ hết box cha thì không cần khai báo width, height, chỉ cần đặt top, bot, left, right là 0px*/
+            width: 50px;
+            height: 50px;
+            background-color: #fff;
+        }
+        .header{
+            position: fixed;
+            width: 100%;
+            height:100px;
+            background-color: violet;
+            bottom: 0px;
+        }
+        ul {
+            
+            height: 2000px;
+        }
+        li {
+            position: sticky;
+            /*position: -webkit-sticky;*/
+            top: 0px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+
+    </div>
+    <div class="box">
+        <div class="box-child"></div>
+    </div>
+    <h1>Position</h1>
+    <ul>
+        <li>Relative: vị trí tương đối</li>
+        <li>Absolute: vị trí tuyệt đối</li>
+        <li>Fixed: Vị trí phụ thuộc vào khung trình duyệt</li>
+        <li>Sticky</li>
+
+    </ul>
+</body>
+</html>

@@ -1,0 +1,8 @@
+:root {
+    --text-color: violet;
+
+} /*lớp giả, có thể sử dụng các biến bên trong này một cách global*/
+/*Ta cũng có thể định nghĩa biến đó trong local*/
+h1,h2,h3 {
+    color: var(--text-color)
+}

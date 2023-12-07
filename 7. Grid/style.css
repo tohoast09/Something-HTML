@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+body {
+    padding: 20px;
+}
+.item {
+    background-color: gold;
+    border: 1px solid grey;
+    min-height: 60px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr); /*đơn vị tương đối -> fraction*/
+    grid-template-rows: 100px 100px 100px; /*Những hàng được tạo có chủ đích*/
+    /* grid-auto-rows: 200px; set chiều cao cho những thuộc tính được tạo tự động */
+    grid-auto-rows: minmax(200px,auto); /*minmax là thuộc tính của grid, ở đây 200px là gí trị nhỏ nhất của row được tạo tự động, auto là tuân theo giá trị của ô cao nhất trong hàng*/
+}
+
+.item-8 {
+    /* grid-column-start: 2;
+    grid-column-end: 4; */
+    grid-column: 2/4 /*Cách viết gọn*/
+    /*item-8 chiếm từ line 2 đến line 4*/
+}
+.item-5 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column: 2/3
+}
+
+.container-2 {
+    margin-top: 30px;
+    display: grid;
+    height: 90vh;
+    /* grid-template-columns: repeat(3, 1fr);*/
+    grid-auto-rows: minmax(200px, auto);
+    grid-template-rows: 200px 1fr 1fr 100px;
+    grid-template-areas:
+    "header header header"
+    "sidebar content content"
+    "sidebar comment comment"
+    "footer footer footer"  ;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.item2 {
+    background-color: gold;
+    border: 1px solid grey;
+}
+
+.item2-1{
+    grid-area: header;
+}
+
+.item2-2{
+    grid-area: sidebar;
+}
+.item2-3{
+    grid-area: content;
+}
+.item2-4{
+    grid-area: comment;
+}
+.item2-5 {
+    grid-area: footer;
+}

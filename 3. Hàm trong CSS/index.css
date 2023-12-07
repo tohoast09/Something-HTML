@@ -6,3 +6,20 @@
 h1,h2,h3 {
     color: var(--text-color)
 }
+
+.test {
+    background-color: yellow;
+    height: auto;
+    text-align: center;
+}
+span {
+    width: 1000px;
+    display: block;
+    text-align: center;
+}
+
+.can {
+    justify-content: center;
+    width: 300px;
+    background-color: pink;
+}
