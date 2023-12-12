@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+}
+body {
+    display: flex;
+    font-size: 50px;
+    font-family: "Helvetica Neue";
+    align-items: center;
+    height: 100vh;
+}
+body > div {
+    margin: auto;
+}
+
+/*block*/
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 50px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 25px 25px;
+    border-radius: 60px;
+    min-width: 260px;
+}
+
+.btn--success{
+    background-color: #71be34;
+}
+
+.btn--warn{
+    background-color: #ffb702 ;
+}
+
+.btn--danger{
+    background-color: #ff623d;
+}
